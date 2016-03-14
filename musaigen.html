@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>無彩限Effect</title>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel=stylesheet href="css/base.css"/>
+  </head>
+  <style>video{border:1px solid#ccc;display:block;margin:0 0 20px 0}#canvas{margin-top:20px;border:1px solid#ccc;display:block}</style>
+  <body>
+    <script src="js/three.min.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/stats.min.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/THREEx.KeyboardState.js"></script>
+    <script src="js/THREEx.FullScreen.js"></script>
+    <script src="js/THREEx.WindowResize.js"></script>
+    <script src='js/dat.gui.min.js'></script>
+
+    <!--Load Shaders-->
+    <script src='js/jquery-2.2.1.min.js'></script>
+    <script src="js/ShaderLoader.min.js"></script>
+    <script data-src="shader/vertexShader.js"charset="utf-8"data-name="musaigenShader"type="x-shader/x-vertex"></script>
+    <script data-src="shader/musaigenFragment.js"charset="utf-8"data-name="musaigenShader"type="x-shader/x-fragment"></script>
+    <script data-src="shader/hsvFilterFragment.js"charset="utf-8"data-name="hsvFilterShader"type="x-shader/x-fragment"></script>
+    <script data-src="shader/mosaicFragment.js"charset="utf-8"data-name="mosaicShader"type="x-shader/x-fragment"></script>
+    <script data-src="shader/simpleFragment.js"charset="utf-8"data-name="simpleShader"type="x-shader/x-fragment"></script>
+    <div id="ThreeJS"style="position: absolute; left:0px; top:0px"></div>
+    <script src='js/musaigen.js'></script>
+  </body>
+</html>
